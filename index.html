@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1rem;
+        }
+
+        .form-container {
+            width: 90%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h2>Welcome, to Form Page!</h2>
+        <p>If You Interested in coding / programming then fill this form!</p>
+    </center>
+    <div class="form-container">
+        <form action="" id="myForm">
+            <div class="username">
+                <label for="username">Enter Your Name:</label>
+                <input type="text" name="username" id="username" required>
+            </div>
+
+            <div class="useremail">
+                <label for="useremail">Enter Your Email:</label>
+                <input type="email" name="useremail" id="useremail" required>
+            </div>
+
+            <input type="submit" value="Done">
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <!-- Include other Firebase services if needed -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
